@@ -1,0 +1,61 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Sono';
+    
+}
+
+
+body {
+    background-image: url('./assets/galaxia.jpg')  ; 
+    background-size: cover ;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+}
+
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 40px;
+    margin: 0px 35px;
+    
+    color: white;
+    background-color: transparent;
+    height: 80px;
+    width: auto;
+    
+    font-size: larger;
+}
+
+button {
+    padding: 12px 40px;
+    border-radius: 8px;
+    border: 1px solid purple ;
+    background-color: transparent;
+    color: white;
+    
+
+    gap: 5px;
+
+
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 125%;
+}
+.navegation {
+    color: white;
+    font-size: medium;
+    text-decoration: none;
+}
+
+@media (max-width:550px) {
+       .navegation {
+        display: none;
+    }
+
+}
