@@ -4,17 +4,24 @@
     box-sizing: border-box;
     font-family: 'Sono';
     
-    
 }
 
 
 body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    
     background-image: url('./assets/galaxia.jpg')  ; 
     background-size: cover ;
-    background-position: top;
+    background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
 
+}
+a {
+    color:white
 }
 
 header {
@@ -22,17 +29,19 @@ header {
     top: 0;
     left: 0;
     width: 100%;
-    padding: 20px 100px;
+    padding: 20px 125px;
     justify-content: space-between;
     display: flex;
     align-items: center;
     z-index: 99;
+
 }
 
 .logo {
     display: inline-block;
     color: white;
     align-items: center;
+    font-family: 'Sono';
     
 
 }
@@ -45,17 +54,19 @@ header {
    text-decoration: none;
    font-weight: 600;
    margin-left: 40px;
+   font-family: 'Sono';
 
 }
     
 
 
-button {
+.button-nav {
     padding: 12px 40px;
     border-radius: 8px;
     border: 1px solid purple ;
     background-color: transparent;
     color: white;
+    margin-left: 40px;
     
 
     gap: 5px;
@@ -64,11 +75,21 @@ button {
     font-weight: 600;
     font-size: 16px;
     line-height: 125%;
+    transition: .5s;
+    font-family: 'Sono';
+}
+
+.button-nav:hover {
+    background-color: blueviolet;
+
 }
 
 
 
-@media (max-width:850px) {
+
+
+
+@media (max-width:900px) {
        .navigation a {
         display: none;
     }
